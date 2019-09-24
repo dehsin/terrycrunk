@@ -1,21 +1,13 @@
 version: 0.1
 
 phases:
+  install:
+    runtime-versions:
+      node: 12.9.1
   build:
     commands:
       - echo Nothing to do yet
 
-runtimes:
-  nodejs:
-    versions:
-      10:
-        commands:
-          - echo "Installing Node.js version 10 ..."
-          - n 10.16.0
-      8:
-        commands:
-          - echo "Installing Node.js version 8 ..."
-          - n 8.16.0
 artifacts:
   files:
     - index.html
